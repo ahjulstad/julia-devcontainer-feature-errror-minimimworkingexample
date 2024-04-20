@@ -7,10 +7,10 @@ services:
 #    image: mcr.microsoft.com/devcontainers/base:ubuntu
     volumes:
       - ../..:/workspaces:cached
-      - dotjulia:/home/vscode/.julia
+      #- dotjulia:/home/vscode/.julia
     command: sleep infinity
 
-volumes:
-  dotjulia:
-    external: true 
-    name: dotjulia
+# volumes:
+#   dotjulia:
+#     external: true 
+#     name: dotjulia
